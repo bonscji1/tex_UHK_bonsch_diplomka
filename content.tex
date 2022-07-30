@@ -16,9 +16,92 @@ Smysl a účel, výzkumné otázky.
 
 Cíle, hypotézy/ výzkumné otázky, způsob hledání odpovědí na výzkumné otázky včetně metodiky vlastního výzkumu/šetření, literární rešerše.
 
-\section{Vlastní text práce}
+
+\section{Teoretická část}
 
 % TODO WRITER: text
+
+% todo delete poznámky
+\section{Herní engine}
+\paragraph{}
+	Vytvoření hry je  složitý proces, úspěšné dokončení vyžaduje značné úsilí.
+	Pokud se podíváme na stav nově vycházejících her, můžeme vidět že i přes roky vývoje od velkých studií najdeme nezměrně případů nedokončených her.
+	V nejlepším případě jsou tyto hry podporovány dlouho po samotném vydání , příkladem No mans sky\cite{no_mans_sky}. 
+	Jiné jsou jsou zachráněné komunitou, kde komunita sama vydává patche a mody vylepšující nebo opravující to, co už vývojář neudělá, Skyrim\cite{skyrim}.
+	V nejhorším případě však není zajem ani od komunity ani od vývojáže dále hry podporovat, a tak upadá v zapomění jako produkt který nikdy nedosáhne své plné kapacity, jedním z novějších případů je Babylons fall\cite{babylons_fall}.
+
+\paragraph{}--todo del popsání zkratek + proč to nestavíme od podlahy, knihovny a herní enginy
+	a tak není divu že existuje hned několik možností, jak si tento proces zjednodušit. Celkem často se můžeme setkat s pořekadlem:
+
+
+	Jednou z techto možností je použití již vytvořeného herního enginu.
+	Herní engin je prostředí, ve kterém je možné hru tvořit. Pokud je potřeba extrémní specifikace nebo kontrola nad způsobém, jakým hra běží, je možné si takový engine napsat od základů.
+	Toto možnost si však většinou mohou dovolit jen velké vývojové studia, která tento engin používají hned pro několik her. Vývoj je náročná, složitá a v neposlední řadě nákladná záležitost.
+	Vytvoření hry je strukturovaný proces a jedním z jeho nejzákladnějších článků je je volba prostředí, ve kterém bude hra tvořena.
+
+
+	Je možné začít zcela od začátku a postavit si vlastní prostředí plně přizpůsobené vlastním potřebám, to však se vzrůstající složitostí a nároky na programátora bývá stále vzácnější.
+	Je možné využít předpřipravené knihovny, příkladem knihovna Pygame\cite{pygame}, které nám umožňují stavět na prověřeném základu, kde máme dobrou jistotu že základní fungčnost je zajištěna a správně a můžeme se tak soustředit na složitější implementaci.
+
+\paragraph{} --todo del popsat jednotlive enginy
+
+\paragraph{} godot a proč jsem si ho vybral
+
+	\subsection{poznámky - smazat}
+	proč je dobré využít herní engin(zmínit knihovny jako pygame), jaké jsou, následuje krátké highlity enginů, a výsledné zvolení godotu
+
+	https://github.com/pygame/pygame/
+
+	\subsection{Godot}
+	co to je(stručně), proč to je (proč byl vybrán  v porovnání s kompeticí [Unity, Unreal, Frostbite,....]), více o  něm (obrázky, výhody do hloubky)
+
+	V oficiální dokumentaci je godot popsán takto:
+
+		\paragraph{}
+		Godot Engine is a feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface. It provides a comprehensive set of common tools, so users can focus on making games without having to reinvent the wheel. Games can be exported in one click to a number of platforms, including the major desktop platforms (Linux, macOS, Windows) as well as mobile (Android, iOS) and web-based (HTML5) platforms.
+
+		Godot is completely free and open source under the permissive MIT license. No strings attached, no royalties, nothing. Users' games are theirs, down to the last line of engine code. Godot's development is fully independent and community-driven, empowering users to help shape their engine to match their expectations. It is supported by the Software Freedom Conservancy not-for-profit \cite{godot_introduction} .
+
+		\subsubsection{Poznámky - smazat}
+		Godot's key concepts.
+
+		https://docs.godotengine.org/en/stable/getting\_started/introduction/key\_concepts\_overview.html.
+
+		A game is a tree of nodes that you group together into scenes. You can then wire these nodes so they can communicate using signals.
+
+		\begin{itemize}
+			\item tree,
+			\item node - smallest building blocks organised into trees, godot provides good selection of base nodes,
+			\item scene - character, weapon, menu, \ldots,
+			\item  signal - when event occur on node, signal is created, used for communication between nodes (observer pattern).
+		\end{itemize}
+
+		GDscript is the language
+
+		Godot's design philosophy:
+		https://docs.godotengine.org/en/stable/getting\_started/introduction/godot\_design\_philosophy.html
+		Object-oriented design and composition
+
+		More about basic concepts
+		https://docs.godotengine.org/en/stable/getting\_started/step\_by\_step/index.html
+
+\section{Praktická část}
+
+% TODO WRITER: text
+
+
+\section{Závěry a doporučení}
+
+% TODO WRITER: text
+
+Kritická diskuze nad výsledky, ke kterým autor dospěl (soulad výsledků  literaturou či předpoklady;
+výsledky a okolnosti, které zvláště ovlivnily předkládanou práci atd.). Je vhodné naznačit i případné další
+(popř. alternativní) možnosti zkoumání dané problematiky a otevřené problémy pro další studium.
+
+%---------------------------------------------------------end--------todo delete after this
+\section{Testovací část}
+
+% TODO delete this testing classes
 
 Vlastní řešení dokládá student zpravidla v několika kapitolách. Podle charakteru práce musí student uvážit, zda informace
 netextové povahy (data, tabulky, obrázky atd.) bude uvádět přímo v textu, nebo je zařadí až za celou práci ve formě příloh, či bude kombinovat oba způsoby.
@@ -99,10 +182,4 @@ public interface AccountDao {
 
 			Další text
 
-\section{Závěry a doporučení}
 
-% TODO WRITER: text
-
-Kritická diskuze nad výsledky, ke kterým autor dospěl (soulad výsledků  literaturou či předpoklady;
-výsledky a okolnosti, které zvláště ovlivnily předkládanou práci atd.). Je vhodné naznačit i případné další
-(popř. alternativní) možnosti zkoumání dané problematiky a otevřené problémy pro další studium.

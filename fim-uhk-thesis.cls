@@ -243,7 +243,7 @@
 %Vyber fakulty / faculty selection
 \newcommand{\set@faculty}[3]{%
  \naselfalse
- % TODO WRITER: enter name faculty
+ % WRITER: enter name faculty
  \ifEqString{#1}{FIM}{Fakulta informatiky a managementu}{\@fim@CS}%
  \ifEqString{#1}{FIM}{Fakulta informatiky a managementu}{\@fim@SK}%
  \ifEqString{#1}{FIM}{Faculty of Informatics and Management}{\@fim@EN}%
