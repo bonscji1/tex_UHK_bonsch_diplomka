@@ -27,12 +27,37 @@ Cíle, hypotézy/ výzkumné otázky, způsob hledání odpovědí na výzkumné
 	Vytvoření hry je  složitý proces, úspěšné dokončení vyžaduje značné úsilí.
 	Pokud se podíváme na stav nově vycházejících her, můžeme vidět že i přes roky vývoje od velkých studií najdeme nezměrně případů nedokončených her.
 	V nejlepším případě jsou tyto hry podporovány dlouho po samotném vydání , příkladem No mans sky\cite{no_mans_sky}. 
-	Jiné jsou jsou zachráněné komunitou, kde komunita sama vydává patche a mody vylepšující nebo opravující to, co už vývojář neudělá, Skyrim\cite{skyrim}.
-	V nejhorším případě však není zajem ani od komunity ani od vývojáže dále hry podporovat, a tak upadá v zapomění jako produkt který nikdy nedosáhne své plné kapacity, jedním z novějších případů je Babylons fall\cite{babylons_fall}.
+	Jiné jsou jsou zachráněné komunitou, kde komunita sama vydává patch nebo modifikace opravující chyby nebo přidávající  vlastnosti, které zlepšují požitek z dané hry.
+	Asi nejznámějším příkladem je Skyrim\cite{skyrim}, kde vývojář Bethesda\cite{bethesda}) je proslulý množstvím problémů, které zanechávají ve svých obrovských hrách.
+	Dalo by se téměř říci, že na komunitu modderů spoléhají, jelikož jsou jedna ze společností s oficiální podporou modifikací, dokonce přibalily mody do později vydaných edicí hry Skyrim.
+	V nejhorším případě však není zájem ani od komunity ani od vývojáře dále hry podporovat, a tak upadá v zapomnění jako produkt který nikdy nedosáhne své plné kapacity, jedním z novějších případů je Babylons fall\cite{babylons_fall}.
+	Není tak divu, že se snažíme nejtěžší části vývojového procesu vyvarovat použitím dostupných nástrojů v podobě knihoven nebo herních enginů.
 
-\paragraph{}--todo del popsání zkratek + proč to nestavíme od podlahy, knihovny a herní enginy
-	a tak není divu že existuje hned několik možností, jak si tento proces zjednodušit. Celkem často se můžeme setkat s pořekadlem:
+\paragraph{}
+	Herní engine je framework pro podporu vývoje her, který se skládá z knohoven a podpůrných programů vytvořených za tímto účelem.
+	Samozřejmě existují samostatné knihovny pro podporu vývoje her, příkladem knihovna Pygame\cite{pygame}, které nám dovolují soustředit se pouze na samotnou hru.
+	Jedná se spíše o množství ulehčení pro vývojáře.
+	Samostatné knihovny jsou dobré pro rychlé prototypy nebo jednodušší hry, aby jsme však byli schopni vytvořit sofistikované dílo, budeme muset navázat několik knihoven na sebe.
+	Mohou zde nastat problémy s kompatibilitou, budeme muset vytvořit propojení, hlídat si aby novější verze knihovny náhodou nerozbila spolupráci a všeobecně knihovnám věnovat množství času které by jsem radši věnovali tvorbě.
+	Proto je lepší využít herní engine kde je celý tento proces vyřešen za nás.
+	Toto skutečnost si uvědomují i velká vývojový studia a proto můžeme nalézt několik případů vyvíjených herních enginů přímo v daném studiu nebo v sesterských studiích.
+	Ne každý engine je však vhodný pro každou hru, tyto enginy jsou často přizpůsobené určitému žánru her a pokusit se v daném enginu vyvíjet jiný typ hry může vést ke značným problémům.
+	Také složitost enginů stoupá s jejich schopnostmi.
+	Například Frostbite engine\cite{frostbite}, byl popsán jako formule F1, která je krásná a velmi rychlá ale jen zkušený řidič z ní je schopen dostat maximální výkon\cite{frostbite_article}.
+	V tomto případě se schopným řidičem zdálo být studio DICE, které pomáhalo ostatním sesterským studiům a ani tak to nebylo v několika případech dostatečné.
+	Jedním příkladem za všechny je Mass effect Andromeda\cite{mass_effect_andromeda}, jež je hra která díky svým problémům zastavila vývoj velmi známe a před tímto titulem očekávané série.
+	Jedním z hlavních problémů byl totiž přestup na jiný herní engin, než na kterém byla vyvíjena původní trilogie, tímto enginem je právě výše zmíněný frostbite oproti původnímu Unreal enginu\cite{unreal_engine}.
 
+\paragraph{} --todo del navázat na naše volně použivatelné enginy- pak už podkategorie
+
+
+\paragraph{}--todo del popsání zkratek + proč to nestavíme od podlahy, knihovny a herní enginy, předělat, mluvím o blbostech
+	Prvním postupem je vytvoření celé hry čistě ze začátku.
+	Toto je postup velkých vývojářských studií která si mohou dovolit obětovat značné množství úsilí.
+	Hlavní výhodou je absolutní kontrola nad tvořeným dílem, nemusíme totiž tvořit obecně pro mnoho použití ale pouze pro naše specifické.
+	Tyto společnosti také nechtějí platit za využívání  hotového herního enginu, se kterým se může vázat monetizační strategie.
+	Více o monetizaci u samotných enginů.
+	Velmi známým příkladem takto vytvořeného enginu je Frostbite engine\cite{frostbite}.
 
 	Jednou z techto možností je použití již vytvořeného herního enginu.
 	Herní engin je prostředí, ve kterém je možné hru tvořit. Pokud je potřeba extrémní specifikace nebo kontrola nad způsobém, jakým hra běží, je možné si takový engine napsat od základů.
