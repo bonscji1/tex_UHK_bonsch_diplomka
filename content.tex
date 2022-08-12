@@ -76,21 +76,58 @@ Cíle, hypotézy/ výzkumné otázky, způsob hledání odpovědí na výzkumné
 	--todo \linebreak
 	\begin{itemize}
 		\item \textbf{Společnost: } Unity Technologies
-		\item \textbf{Cena: } zdarma do 100,000 dolarů zisku, různé platební plány nad tuto hranici\cite{unity_pay_plan}
-		\item \textbf{Skriptovací jazyk: } C#, Vizuální skriptování
+		\item \textbf{Cena: } zdarma do 100,000 dolarů zisku/financování ročně, různé platební plány nad tuto hranici\cite{unity_pay_plan}
+		\item \textbf{Skriptovací jazyk: } C\#, Vizuální skriptování
 		\item \textbf{Herní příklad: } Ori and the will of the wisps, Valheim, Raft \todo doplnit linky
 		\item \textbf{Hlavní plus: } Masivní rozšířenost, mnoho tutoriálů, oficiální certifikace, asset obchod, není specializovaný
 		\item \textbf{Hlavní mínus: } Vedení společnosti, není specializovaný
 		\item
 	\end{itemize}
 
-\paragraph{} \todo to co mam v buletpointech rozepsat
+\paragraph{}
 	Unity\cite{unity_engine} je jeden z nejznámějších a nejpoužívanějších enginů.
+	To můžeme vidět hned na jejich stránce týkající se herních řešení, kde prohlašují že 50 procent her přes různá zařízení je tvořeno v Unity enginu.
+	Také již v předem zmíněných statistikách ze Steamu\cite{steamdb_engines} můžeme vidět, že unity zaujímá v době psaní první místo v počtu her používajících tento engin.
+	A není se čemu divit, jelikož unity je velice kompetentní engine ve všech směrech vyvíjený developerem Unity Technologies.
+	Poprvé se objevil již v roce 2005, a od té doby prošel mnoha verzemi,  nejnovější v době psaní textu je verze 2022, avšak do budoucna dlouhodobě podporovaná je 2021 \firstac{LTS}.
+	V těchto současných verzích je pak skriptovacím jazykem C\#.
 
+\paragraph{}
+	Jeho rozšířenost a dlouhodobý vývoj znamenají, že má mnoho co nabídnout vývojářům.
+	Existuje mnoho tutoriálů, které jsou jednak volně přístupné na platformách jako je Youtube, ale také přímo na stránkách Unity.
+	Co je ještě zajímavější jsou možnosti certifikace, která se taktéž nachází na stránkách Unity.
+	Certifikace zaručuje lepší možnosti na trhu práce a je rozdělena do několika kategorií, jak podle činnosti (programátor, umělec, tvůrce her, etc), tak náročnosti a znalostí (uživatel, společník, profesionál a expert).
+	Poslední bod hodný zmínění týkající se naučení práce s Unity herním enginem je jeho dokumentace\cite{unity_doc}, která je samozřejmě rozsáhlá, pokrývá však jednotlivé body do hloubky a jsou dobře vysvětleny.
+
+\paragraph{}
+	Jedním z důvodů rozšířenosti tohoto enginu je šíře možností tvořených her.
+	Je celkem jedno jestli vývojář bude tvořit 2D, 3D, 2 a půl D, VR nebo hru s AI, Unity zvládne to vše a více.
+	V rámci unity je také mnoho podpůrných systémů například pro zmíněné AI, monetizaci nebo analitiky.
+	Unity je proto výborná volba protože nesvazuje ruce vývojáři při výběru typu jeho hry, někomu však může vadit přístup všestrannosti na úkor specifikace.
+	V unity je například možné tvořit 2D hry, ale existují lepší možnosti.
+	Navíc existují ještě enginy, dělané pouze pro jeden specifický typ her, příkladem Ren'py\cite{ren_py} a vizuální novely.
+	Unity nabízí více možností ale pokud vývojář chce vytvořit pouze vizuální novelu, alespoň základní práce s Ren'py pro něj bude jednodušší, dokud po tomto enginu nebude požadovat něco co neumí.
+	Je tedy nutné zvážit jestli se nám do projektu hodí více generalizace či specificita.
+	Tato generalizace a rozšířenost však vyústila v ještě jeden bod, který je u Unity nutný zmínit.
+	Je jím Asset obchod\cite{unity_asset_store}, kde je možné zakoupit nebo prodávat vytvořené herní assety.
+	Samozřejmě se zde nachází i assety zdarma, jsou to však většinou základní balíčky.
+	Pokud tak vývojář neumí nebo nemá čas vytvářet nějaký facet své hry, může ho zde jednoduše zakoupit.
+	To vede ke značnému snížení nároků na vývojáře, může to plně nahradit část vývojářského skillsetu nebo dokonce členy vývojářského týmu.
+	Existuje však i stinná stránka této funkčnosti.
+	Existují případy, kdy jsou celé hry sestavené pouze z koupených assetů a vývojář je pouze poskládal nějakým způsobem dohromady, většinou k celkem špatnému finálnímu výsledku.
+
+\cntcapfigure{Unity_asset_store}{\linewidth}{Ukázka unity asset obchodu}{\cite{unity_asset_store}}
+
+\paragraph{}
+	Co může na první pohled zarazit je ceník využívání Unity enginu, existuje zde totiž hned několik cenových kategorií\cite{unity_pay_plan}.
+	Na stránkách Unity jsou rozděleny na individuální, týmové a pro společnosti.
+	Zajímavé je hlavně to, že používání Unity enginy je zcela zdarma dokud roční zisk ani financování nepřekročí 100,000 dolarů.
+	Pro ty kdo překročí tuto hranici, ale zisk nebo financování je menší jak 200,000 dolarů je Unity plus plán.
+	Všichni ostatní pak spadají pod  Unity Pro nebo Unity Enterprise.
 
 \paragraph{}
 	Jeden z největších problémů vůči využití tohoto enginu jsou současné kontroverze, které se ho týkají.
-	První z nich je mentalita vedení Unity technologies, kterou můžeme vidět v interview s Johnem Riccitiello, současným CEO unity a bývalým prezidentem a CEO společnosti EA.
+	První z nich je mentalita vedení Unity technologies, kterou můžeme vidět v interview s Johnem Riccitiello, současným \firstac{CEO} unity a bývalým prezidentem a \ac{CEO} společnosti EA.
 	Společnost EA je proslulá svým sub-optimálním chováním vůči svým zákazníkům a fanouškům spolu s obchodními taktikami, které jsou často na hranicích legálnosti, nemluvě o moralitě.
 	Nejznámějším případem za poslední dobu jsou takzvané "loot boxy"\cite{loot_box_wiki}, které vyvolaly hned několik soudních sporů.
 	Můžeme tak očekávat, že myšlení a styl managementu COE Johna Riccitiello bude nezměněn nebo alespoň podobný mezi těmito společnostmi.
